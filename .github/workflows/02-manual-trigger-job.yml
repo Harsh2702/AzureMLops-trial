@@ -18,9 +18,9 @@ jobs:
     - name: Azure login
       uses: azure/login@v1
       with:
-      client-id: 864c0eef-74c7-45cf-85c8-9af66590c95f 
-      tenant-id: 42aba817-505a-4c6c-aad4-6c5144559203
-      subscription-id: d199375b-0629-4ba1-813e-a4c4d508ce2c
+        client-id: 864c0eef-74c7-45cf-85c8-9af66590c95f 
+        tenant-id: 42aba817-505a-4c6c-aad4-6c5144559203
+        subscription-id: d199375b-0629-4ba1-813e-a4c4d508ce2c
         enable-AzPSSession: true     # Required if using Managed Identity
         # creds not needed if using Managed Identity on Azure VM
 
