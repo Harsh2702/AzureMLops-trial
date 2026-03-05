@@ -13,4 +13,4 @@ compute: Hj-D2v3
 experiment_name: diabetes-dev-folder
 description: diabetes detection.
 identity:
-  type: SystemAssigned
+  type: managed_identity
