@@ -1,16 +1,17 @@
 $schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
 code: model
-command: >-
+command: >
   python train.py --training_data ${{inputs.diabetes}} --reg_rate ${{inputs.reg_rate}}
 inputs:
   diabetes:
-    type: uri_folder 
-    path: ../experimentation/data
+    type: uri_folder
+    path: src/data   # make sure data is inside repo
   reg_rate: 0.01
-  
+
 environment: azureml:AzureML-sklearn-0.24-ubuntu18.04-py37-cpu@latest
 compute: Hj-D2v3
 experiment_name: diabetes-dev-folder
 description: diabetes detection.
+
 identity:
-  type: managed_identity
+  type: managed
