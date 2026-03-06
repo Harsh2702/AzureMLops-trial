@@ -9,7 +9,7 @@ inputs:
   reg_rate: 0.01
 
 environment: azureml:AzureML-sklearn-0.24-ubuntu18.04-py37-cpu@latest
-compute: azureml:Hj-D2v3
+compute: azureml:hj-cluster
 experiment_name: diabetes-dev-folder
 description: diabetes detection.
 
