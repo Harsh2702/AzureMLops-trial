@@ -13,5 +13,5 @@ compute: azureml:hj-cluster
 experiment_name: diabetes-dev-folder
 description: diabetes detection.
 
-identity:
-  type: managed_identity
+#identity:
+ # type: managed_identity
